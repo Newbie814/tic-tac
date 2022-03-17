@@ -28,3 +28,6 @@ If I can develop a function to determine if there is any path to victory remaing
 
 
 ![tic-tac-user-func](https://user-images.githubusercontent.com/96838174/158891105-ee2d09e0-ba5f-4909-b80d-c09508c38c45.png)
+
+
+Finished initial styling prototype. Took about 30 minutes to figure out how to center drop down text, which is longer than I intended. Will start on game logic this evening.
