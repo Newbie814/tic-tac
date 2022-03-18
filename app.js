@@ -8,19 +8,20 @@ const box7 = document.getElementById('box-7');
 const box8 = document.getElementById('box-8');
 const box9 = document.getElementById('box-9');
 const gameField = document.getElementById('entire-grid');
+// const gameField = document.getElementById('entire-grid');
 
 // let player1input = box1value.options[box1value.selectedIndex].text;
 
 
 
 // box1.addEventListener('change', test);
-gameField.addEventListener('change', checkForWin);
+
 
 
 function test() {
-  console.log(box1.value);
-  console.log(box2.value);
-  // console.log(box3.value);
+  // console.log(box1.value);
+  // console.log(box2.value);
+  console.log(box3.value);
   // console.log(box4.value);
   // console.log(box5.value);
   // console.log(box6.value);
@@ -30,10 +31,25 @@ function test() {
 }
 
 function checkForWin() {
-  if (box1.value === box2.value && box2.value === box3.value) {
+  if ((box1.value === box2.value && box2.value === box3.value) || (box4.value === box5.value && box5.value === box6.value) ||
+  (box7.value === box8.value && box8.value === box9.value) ||
+  (box1.value === box4.value && box4.value === box7.value) ||
+  (box2.value === box5.value && box5.value === box8.value) ||
+  (box3.value === box6.value && box6.value === box9.value) ||
+  (box7.value === box5.value && box5.value === box3.value) ||
+  (box1.value === box5.value && box5.value === box9.value))   {
     console.log('winner')
-  } 
+  } else {
+    console.log("next player's turn")
+  }
 }
+
+gameField.addEventListener('change', checkForWin);
+
+
+
+// started with below but || was shorter
+
 // function checkWin() {
 //   if (box1.value === box2.value && box2.value === box3.value) {
 //     console.log(box1.value)
@@ -46,16 +62,3 @@ function checkForWin() {
 // }
 
 
-
-// if (box1value.value === box2value.value
-// ||
-// box7.value === box8.value && box8.value === box9.value;
-
-//  ||
-// (box4.value === box5.value && box4.value === box6.value)
-// ||
-    // box7.value === box8.value && box8.value === box9.value
-
-    // function test() {
-    //   console.log(box7.value);
-    // }
