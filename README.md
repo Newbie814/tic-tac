@@ -31,3 +31,26 @@ If I can develop a function to determine if there is any path to victory remaing
 
 
 Finished initial styling prototype. Took about 30 minutes to figure out how to center drop down text, which is longer than I intended. Will start on game logic this evening.
+
+
+
+Second addition:
+
+I finished the bulk of logic. I had the logic right from the beginning. However, it took me a long time to finish. I wanted to use drop down for a more seamless user experience. I left the first option as an empty string, so the inital board would be empty. My conditionals were not working right. I tried a lot of solutions. Was DOM  wrong? Was I pulling the wrong element? Syntax? Was there a different event I needed to listen for?
+
+Turns out, I simply forgot to account for the fact the that empty string actually had a value and was computing as a win under my condionals setup.
+
+Here are screenshots pf where i am now. Will add issues for tomorrow's work.
+
+
+
+
+![tic-tac-code](https://user-images.githubusercontent.com/96838174/158928668-0121f293-313b-40e9-8403-db17d3c94de5.png)
+
+
+
+
+
+
+
+![tic-tac-code2](https://user-images.githubusercontent.com/96838174/158928681-d96c2d25-b806-4816-87af-afa92cbd6955.png)
